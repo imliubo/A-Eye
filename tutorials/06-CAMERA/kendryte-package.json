@@ -1,0 +1,22 @@
+{
+    "name": "kendryte/camera-screen-standalone",
+    "version": "develop",
+    "type": "executable",
+    "dependency": {
+        "kendryte/standalone-sdk": "develop",
+        "kendryte/camera-standalone-driver": "develop"
+    },
+    "source": [
+        "src/*.c",
+        "src/*.cpp",
+        "drivers/lcd/src/lcd.c",
+        "drivers/lcd/src/st7789.c",
+        "drivers/camera/src/ov_camera.cpp"
+    ],
+    "header": [
+        "src",
+        "drivers/lcd/include",
+        "drivers/camera/include"
+    ],
+    "homepage": "https://github.com/GongT/monorepo-kendryte-driver-collection"
+}
