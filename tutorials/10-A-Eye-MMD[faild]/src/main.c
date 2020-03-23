@@ -12,8 +12,6 @@
 FIL file;
 FRESULT ret = FR_OK;
 uint32_t v_ret_len = 0;
-char filename_buffer[28];
-uint8_t frame_data[64800] __attribute__((aligned(8)));
 
 static int sdcard_init(void) {
   uint8_t status;
@@ -40,16 +38,6 @@ static int fs_init(void) {
   printf("mount sdcard:%d\r\n", status);
   if (status != FR_OK) return status;
 
-  // printf("printf filename\r\n");
-  // status = f_findfirst(&dj, &fno, _T("0:"), _T("*"));
-  // while (status == FR_OK && fno.fname[0]) {
-  //   if (fno.fattrib & AM_DIR)
-  //     printf("dir:%s\r\n", fno.fname);
-  //   else
-  //     printf("file:%s\r\n", fno.fname);
-  //   status = f_findnext(&dj, &fno);
-  // }
-  // f_closedir(&dj);
   return 0;
 }
 
@@ -95,7 +83,7 @@ int main(void) {
   lcd_init();
   lcd_set_backlight(0.2);
   lcd_clear(WHITE);
-  lcd_draw_string(85, 65, "Bad Apple", BLACK);
+  lcd_draw_string(10, 65, "K210 MMD elect-gombe", BLACK);
   sleep(1);
 
   main3d("model.pmd", "motion.vmd");

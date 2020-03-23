@@ -1,4 +1,4 @@
-cd "/home/imliubo/Github/A-Eye/tutorials/10-A-Eye-MMD/build"
+cd "/home/imliubo/Github/A-Eye/tutorials/10-A-Eye-MMD[faild]/build"
 export VSCODE_PATH=/home/imliubo/Kendryte/KendryteIDE/Application/app_1.34.1-beta_20190802.2
 export XDG_VTNR=7
 export LC_PAPER=en_US.UTF-8
@@ -112,4 +112,4 @@ export PYTHONPATH=:/usr/lib/python2.7/:/usr/lib/python2/:/lib/python2.7/:/lib/py
 export PYTHONDONTWRITEBYTECODE=yes
 export CMAKE_MAKE_PROGRAM=make
 export KENDRYTE_IDE=yes
-"/home/imliubo/Kendryte/KendryteIDE/LocalPackage/cmake/bin/cmake" --build /home/imliubo/Github/A-Eye/tutorials/10-A-Eye-MMD/build -- -j 3
+"/home/imliubo/Kendryte/KendryteIDE/LocalPackage/cmake/bin/cmake" --build /home/imliubo/Github/A-Eye/tutorials/10-A-Eye-MMD[faild]/build -- -j 3

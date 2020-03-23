@@ -3,6 +3,7 @@
         "cstddef": "cpp",
         "array": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "ff.h": "c"
     }
 }
