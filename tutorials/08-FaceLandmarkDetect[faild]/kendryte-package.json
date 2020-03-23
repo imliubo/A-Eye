@@ -1,0 +1,24 @@
+{
+    "name": "kendryte/face-landmark-detect-standalone",
+    "version": "develop",
+    "type": "executable",
+    "dependency": {
+        "kendryte/standalone-sdk": "develop",
+        "kendryte/camera-standalone-driver": "develop",
+        "kendryte/w25qxx-standalone-driver": "develop"
+    },
+    "source": [
+        "src/*.c",
+        "drivers/lcd/src/lcd.c",
+        "drivers/lcd/src/st7789.c",
+        "drivers/ai_image/src/image_process.c",
+        "drivers/ai_image/src/region_layer.c"
+    ],
+    "header": [
+        "src",
+        "drivers/lcd/include",
+        "drivers/ai_image/include"
+    ],
+    "homepage": "",
+    "definitions": {}
+}

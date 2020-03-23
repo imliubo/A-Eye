@@ -1,0 +1,20 @@
+{
+    "name": "kendryte/mmd-standalone",
+    "version": "develop",
+    "type": "executable",
+    "dependency": {
+        "kendryte/standalone-sdk": "develop",
+        "kendryte/sdcard-standalone-driver": "develop"
+    },
+    "source": [
+        "src/*.c",
+        "src/*cpp",
+        "drivers/lcd/src/lcd.c",
+        "drivers/lcd/src/st7789.c"
+    ],
+    "header": [
+        "src",
+        "drivers/lcd/include"
+    ],
+    "homepage": ""
+}

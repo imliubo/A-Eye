@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "plic.h": "c",
+        "lcd.h": "c",
+        "kpu.h": "c"
+    }
+}

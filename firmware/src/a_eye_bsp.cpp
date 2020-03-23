@@ -33,9 +33,9 @@ void system_init() {
   msleep(100);
 
   /* Flash init */
-  printf("flash init\n");
-  w25qxx_init(3, 0, 40000000);
-  w25qxx_read_data(KMODEL_START, nn.model, KMODEL_SIZE);
+  // printf("flash init\n");
+  // w25qxx_init(3, 0, 40000000);
+  // w25qxx_read_data(KMODEL_START, nn.model, KMODEL_SIZE);
 
   /* TF-Card init */
   printf("TF-Card init...\n");
@@ -46,7 +46,7 @@ void system_init() {
   camera.init();
 
   /* KPU init */
-  nn.init();
+  // nn.init();
 
   /* enable global interrupt */
   sysctl_enable_irq();

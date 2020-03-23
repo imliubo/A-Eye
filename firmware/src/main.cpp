@@ -8,14 +8,15 @@ int main(void) {
   while (true) {
     if (camera.grab_frame_done()) {
       /* process frame */
-      nn.run();
+      // nn.run();
 
       /* switch camera buffer */
       camera.switch_gram();
 
       /* display frame */
       lcd.draw_picture_resized(40, 0, 160, 120, camera.get_frame_ptr());
-      // camera.save_picture();
+      camera.save_picture();
+      // sleep(0.5);
     }
   }
 
